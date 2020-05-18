@@ -1,0 +1,24 @@
+package MyRunner;
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+//
+//email= abdulrajik5@gmail.com
+//password= Crm@123456
+
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		// feature means the path of the feature file
+		features="C:\\Users\\Abdul Rajik shaik\\Desktop\\Naveen javaquestionspractisein Eclipse\\NaveenBddFramework\\src\\main\\java\\Feature\\Login.feature"
+		,glue={"Stepdefinitions"}//the path of the step definition file 
+		,format={"pretty","html:test-output","json:json_output/cucumber.json","junit:junit_xml_reports:cucumber.xml"}
+		,dryRun=false
+		,strict=true
+	    ,monochrome=true    //display the console output in a proper readable format
+)
+
+public class TestRunner {
+
+}

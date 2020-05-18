@@ -1,0 +1,161 @@
+package Stepdefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junit.framework.Assert;
+
+public class LoginStepDefinition
+{
+	public static WebDriver driver;
+
+//	@Given("^user is already On Login Page$")
+//    public void user_already_on_login_page(){
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Abdul Rajik shaik\\Desktop\\Abdul\\Chromedriver\\chromedriver.exe");
+//	driver=new ChromeDriver();
+//	driver.manage().window().maximize();
+//	System.out.println("***********launch chrome browser*********************************");
+//	driver.get("https://ui.freecrm.com/");
+//	}
+//	
+//	
+//	@When("^title of Login Page is FREE CRM$")
+//	public void  title_of_login_pageis_freecrm()
+//	{
+//		String expected="Cogmento CRM";
+//		String title=driver.getTitle();
+//		System.out.println("the title of page is "+title);
+//        Assert.assertEquals(expected, title);
+//	
+//	}
+//	
+//	@Then("^user enters login \"(.*)\" and \"(.*)\" $")
+//	public void user_enters_login_username_and_password(String username, String password)  throws Throwable {
+//		
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//	  driver.findElement(By.name("email")).sendKeys(username);
+//	  driver.findElement(By.name("password")).sendKeys(password);
+//	  System.out.println("*********************Entered username and password****************");
+//	  throw new PendingException();
+//	}
+//	
+//	@Then("^User click on login button$")
+//	public void user_click_on_login_button() {
+//	   WebElement loginBtn=driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']"));
+//	   JavascriptExecutor js=((JavascriptExecutor)driver);
+//	   js.executeScript("arguments[0].click();", loginBtn);
+//	   System.out.println("**************clicked on login button**********************");
+//	}
+//
+//	@Then("^User is on Home page$")
+//	public void user_is_on_Home_page() throws Throwable {
+//	   String titleofuser=driver.getTitle();
+//	   System.out.println("******************the title is *****************************"+titleofuser);
+//	}
+
+	
+	
+	
+//**********************************************************contacts************************************
+
+	@Given("^user is already On Login Page$")
+    public void user_already_on_login_page(){
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Abdul Rajik shaik\\Desktop\\Abdul\\Chromedriver\\chromedriver.exe");
+	driver=new ChromeDriver();
+	driver.manage().window().maximize();
+	System.out.println("***********launch chrome browser*********************************");
+	driver.get("https://ui.freecrm.com/");
+	}
+	
+	
+	@When("^title of Login Page is FREE CRM$")
+	public void  title_of_login_pageis_freecrm()
+	{
+		String expected="Cogmento CRM";
+		String title=driver.getTitle();
+		System.out.println("the title of page is "+title);
+        Assert.assertEquals(expected, title);
+	
+	}
+	
+	@Then("^user enters login \"([^\"]*)\"and \"([^\"]*)\"$")
+	public void user_enters_login_and(String username, String password)  {
+		
+		driver.findElement(By.name("email")).sendKeys(username);
+		driver.findElement(By.name("password")).sendKeys(password);
+		 System.out.println("*********************Entered username and password****************");
+	}
+
+	@Then("^User click on login button$")
+	public void user_click_on_login_button()  {
+		
+		 WebElement loginBtn=driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']"));
+		   JavascriptExecutor js=((JavascriptExecutor)driver);
+		   js.executeScript("arguments[0].click();", loginBtn);
+		   System.out.println("**************clicked on login button**********************");
+	   
+	}
+	
+
+	
+
+	@Then("^User is on Home page$")
+	public void user_is_on_Home_page() throws Throwable {
+	   String titleofuser=driver.getTitle();
+	   System.out.println("******************the title is *****************************"+titleofuser);
+	}
+
+	
+	@Then("^user navigate to contacts link and click on it$")
+	public void user_navigate_to_contacts_link_and_click_on_it()  {
+		WebDriverWait wait=new WebDriverWait(driver, 15);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Contacts')]")));
+	    driver.findElement(By.xpath("//span[contains(text(),'Contacts')]")).click();
+	    System.out.println("*******************clicked on contacts links***************");
+	}
+	
+	@Then("^user create new contact page$")
+	public void user_create_new_contact_page() {
+	   
+	}
+	
+	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\" and click on save$")
+	public void user_enters_and_and_click_on_save(String arg1, String arg2) {
+	   
+	}
+	
+	@Then("^close the browser$")
+	public void close_the_browser() {
+	   
+	}
+
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

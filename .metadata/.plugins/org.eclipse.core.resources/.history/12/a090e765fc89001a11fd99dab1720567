@@ -1,0 +1,16 @@
+package javaQuestionPractise;
+
+import java.util.Scanner;
+
+public class vowelandConsonants {
+
+	public static void main(String[] args) {
+
+		//a e i o u 
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a character ");
+		char c=sc.next().charAt(0);
+        System.out.println("the input is "+c);
+	}
+
+}

@@ -1,0 +1,9 @@
+Feature: Free Crm Login Feature
+
+Scenario: Free Crm Login Test Scenario
+
+Given user is already On Login Page
+When title of Login Page is FREE CRM
+Then user enters username and password
+And User click on login button 
+And User is on Home page

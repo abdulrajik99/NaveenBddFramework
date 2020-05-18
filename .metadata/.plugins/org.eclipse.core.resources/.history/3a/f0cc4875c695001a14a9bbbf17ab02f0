@@ -1,0 +1,20 @@
+package MyRunner;
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+//
+//email= abdulrajik5@gmail.com
+//password= Crm@123456
+
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features="C:\\Users\\Abdul Rajik shaik\\Desktop\\Naveen javaquestionspractisein Eclipse\\NaveenBddFramework\\src\\main\\java\\Feature\\Login.feature"
+		,glue={"C:\\Users\\Abdul Rajik shaik\\Desktop\\Naveen javaquestionspractisein Eclipse\\NaveenBddFramework\\src\\main\\java\\Stepdefinitions\\CampaignStepDefinition.java"}
+		,format={"pretty","html:test-output"}
+)
+
+public class TestRunner {
+
+}

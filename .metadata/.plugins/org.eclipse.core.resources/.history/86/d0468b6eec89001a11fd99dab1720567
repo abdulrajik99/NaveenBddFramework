@@ -1,0 +1,18 @@
+package javaQuestionPractise;
+
+import java.util.Scanner;
+
+public class AddtwoNumbersthroughScanner {
+
+	public static void main(String[] args) {
+
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter two Numbers ");
+		int s1=sc.nextInt();
+		int s2=sc.nextInt();
+		System.out.println("The sum is "+((s1+s2)));
+		
+	}
+
+}

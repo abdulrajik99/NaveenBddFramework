@@ -1,0 +1,18 @@
+Feature: Free Crm Login Feature
+
+#Scenario: Free Crm Login Test Scenario
+#
+#Given user is already On Login Page
+#When title of Login Page is FREE CRM
+#Then user enters "abdulrajik5@gmail.com" and "Crm@123456"
+#And User click on login button 
+#Then User is on Home page
+
+
+Scenario: user is able to create a Campaigns
+Given user is already on homepage
+When user click on Campaigns link
+Then user click on New campaign button
+Then user enters campaign name 
+Then user clicks on save button
+Then verify campaign is created
