@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.AssertionError"/>
 <fullyQualifiedTypeName name="cucumber.api.java.en.And"/>
-<fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="Webdriver"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
@@ -16,4 +15,19 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="cucumber.api.java.Before"/>
+<fullyQualifiedTypeName name="cucumber.api.java.After"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
+<fullyQualifiedTypeName name="pages.LoginPage"/>
+<fullyQualifiedTypeName name="pages.HomePage"/>
+<fullyQualifiedTypeName name="utill.TestBase"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="javaClassNotes.java3VariablesAndMethods"/>
+<fullyQualifiedTypeName name="javaClassNotes.java4DifferenttypesOfPrintingVariables"/>
+<fullyQualifiedTypeName name="javaClassNotes.j4"/>
+<fullyQualifiedTypeName name="javaClassNotes.j5garbageCollectors"/>
 </qualifiedTypeNameHistroy>
