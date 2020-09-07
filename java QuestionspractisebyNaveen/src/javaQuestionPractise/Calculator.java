@@ -7,7 +7,7 @@ public class Calculator {
 	public static void main(String[] args) {
 
 		Scanner reader=new Scanner(System.in);
-		System.out.println("Enter two numbers  :");
+		System.out.println("Enter two double numbers  :");
 		double a=reader.nextDouble();
 		double b=reader.nextDouble();
 	System.out.println("select an operator  + ,- ,* ,/");

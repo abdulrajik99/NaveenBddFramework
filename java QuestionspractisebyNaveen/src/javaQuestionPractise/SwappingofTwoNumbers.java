@@ -11,7 +11,7 @@ public class SwappingofTwoNumbers {
 		 int a=sc.nextInt();
 		 System.out.println("Enter second numbers");
 		 int b=sc.nextInt();
-		 a=a-b;
+		 a=a-b;//a=a-b; b=a+b; a= b-a;
 		 b=a+b;
 		 a=b-a;
 		 System.out.println("*****************after swapping******** ");

@@ -5,7 +5,7 @@ public class FActorsofaNumber
 
 	public static void main(String[] args)
   {
-       int number=72;
+       int number=41;
        for(int i=1;i<=number;i++){
     	   if(number%i==0){
     		   System.out.println(" "+i);

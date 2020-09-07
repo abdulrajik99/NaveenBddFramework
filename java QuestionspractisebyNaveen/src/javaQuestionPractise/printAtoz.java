@@ -6,7 +6,7 @@ public class printAtoz {
 	public static void main(String[] args)
 	{
 		for(char c='a';c<='z';c++){
-			System.out.println(c);
+			System.out.println(c); 
 		}
 		
 	}
